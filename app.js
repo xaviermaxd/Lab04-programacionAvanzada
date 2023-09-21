@@ -22,6 +22,10 @@ app.get('/chat', (req, resp) => {
     resp.sendFile(`${__dirname}/cliente/index.html`)
 })
 
+app.get('/code', (req, resp) => {
+    resp.sendFile(`${__dirname}/cliente/code_editor.html`)
+})
+
 app.get('/', (req, resp) => {
     resp.sendFile(`${__dirname}/cliente/chat_view.html`)
 })
